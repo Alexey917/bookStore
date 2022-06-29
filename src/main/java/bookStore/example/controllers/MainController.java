@@ -15,12 +15,16 @@ public class MainController {
     private BookRepository BookRepository;
 
     @GetMapping("/")
-    public String greeting( Model model) {
+    public String home( Model model) {
         model.addAttribute("title", "Главная страница");
         Iterable<Book> books = BookRepository.findAll();
         model.addAttribute("books", books);
         return "home";
     }
+
+
+
+
 
 
 }

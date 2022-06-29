@@ -18,9 +18,12 @@
     </div>
     <h2 class="display-6 text-center mb-4">Книги</h2>
     <div th:each="el : ${books}" class="alert alert-info mt-2">
-        <p th:text="${el.title}"/>
-        <p th:text="${el.author}"/>
-        <p th:text="${el.year}"/>
+        
+
+          <p th:text="${el.title}"/>
+          <p th:text="${el.author}"/>
+          <p th:text="${el.year}"/>
+
     </div>
 </div>
 </body>
